@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Buku Favorit</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="/src/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 pt-8 font-custom space-y-6 sm:space-y-10">
+
+    <!-- Input -->
+    <section id="session-container" class="container mx-auto max-w-3xl py-6 px-6 sm:px-8 lg:px-10 bg-white rounded-md shadow-custom border border-black space-y-4 sm:space-y-6">
+        <h2 class="text-2xl font-semibold text-center">Aplikasi Buku Favorit</h2>
+        <div>
+            <input type="text" id="namaPengguna" placeholder="Masukkan Nama Anda" class="w-full p-2 bg-white rounded-md shadow-custom border border-black" />
+        </div>
+        <div>
+            <button id="btnSimpanNama" class="bg-[#a9d8ea] text-black font-semibold py-2 px-4 w-full sm:w-auto rounded-md hover:bg-blue-100 border-2 border-black text-base shadow-custom inline-block cursor-pointer transform hover:translate-x-0.5 hover:translate-y-0.5">Simpan Nama</button>
+        </div>
+        <h3 id="salamPengguna" class="text-lg font-semibold text-center"></h3>
+    </section>
+
+    <!-- Form Tambah Buku -->
+    <form id="form-tambah-buku" class="container mx-auto max-w-3xl py-6 px-6 sm:px-8 lg:px-10 bg-white rounded-md shadow-custom border border-black space-y-4 sm:space-y-6">
+        <h2 class="text-2xl font-semibold text-center">Isi Judul Buku</h2>
+        <div>
+            <input type="text" id="judul" placeholder="Judul Buku" class="w-full p-2 bg-white rounded-md shadow-custom border border-black" required />
+        </div>
+        <div>
+            <input type="text" id="penulis" placeholder="Penulis" class="w-full p-2 bg-white rounded-md shadow-custom border border-black" required />
+        </div>
+        <div>
+            <input type="number" id="tahun" placeholder="Tahun Terbit" class="w-full p-2 bg-white rounded-md shadow-custom border border-black" required />
+        </div>
+        <div>
+            <button type="submit" class="bg-[#d0f0bf] font-semibold text-black py-2 px-4 w-full sm:w-auto rounded-md hover:bg-green-100 border-2 border-black text-base shadow-custom inline-block cursor-pointer transform hover:translate-x-0.5 hover:translate-y-0.5">Tambah Buku</button>
+        </div>
+    </form>
+
+    <!-- Daftar Buku -->
+    <section id="daftarBuku" class="container mx-auto max-w-3xl px-6 sm:px-8 lg:px-10 space-y-4 sm:space-y-6">
+        <h2 class="text-2xl font-semibold text-center">Daftar Buku</h2>
+        <div id="daftar-buku" class="bg-white p-6 rounded-md shadow-custom border border-black"></div>
+    </section>
+
+    <!-- Buku Favorit -->
+    <section id="bukuFavorit" class="container mx-auto max-w-3xl px-6 sm:px-8 lg:px-10 space-y-4 sm:space-y-6">
+        <h2 class="text-2xl font-semibold text-center">Buku Favorit</h2>
+        <div id="buku-favorit" class="bg-white p-6 rounded-md shadow-custom border border-black"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
